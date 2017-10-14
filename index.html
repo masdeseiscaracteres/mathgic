@@ -1,0 +1,27 @@
+ <html>
+    <head>
+    <title>Mathgic</title>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [["$","$"],["\\(","\\)"]]
+        }
+      });
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+    </script>
+	<script type="text/javascript"
+      src="main.js">
+    </script>
+    </head>
+    <body>
+
+    <textarea  id="MathInput" rows="10" cols="100" onkeyup="UpdateMath(this.value)"></textarea>
+    <div>Your equation:
+		<div id="MathOutput"></div>
+    </div>
+
+    </body>
+</html>
+	
